@@ -11,7 +11,7 @@ This MCP server provides tools to interact with the UK Postcodes API (https://po
 
 ## Dependencies
 - Python 3.8+
-- Requests library
+- `mcp-cli` &  `httpx`
 
 ## Installation
 ```bash
