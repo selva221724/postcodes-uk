@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "postcodes-mcp"
+version = "0.1.0"
+description = "MCP Server for UK Postcode Lookups"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp-sdk",
+    "httpx",
+    "fastmcp"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "mypy",
+    "ruff"
+]
+
+[project.urls]
+Homepage = "https://github.com/cline-ai/postcodes-mcp"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.mypy]
+strict = true
